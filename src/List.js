@@ -3,7 +3,7 @@ import React from 'react'
 import { FaEdit, FaTrash } from 'react-icons/fa'
 const List = ({ items, removeTask, editTask }) => {
   return (
-    <div className="main-list">
+    <div className="main-container">
       {items.map((item) => {
         const { id, title } = item;
         return <article key={id} className="main-item">

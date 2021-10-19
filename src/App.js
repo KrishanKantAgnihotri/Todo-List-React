@@ -75,7 +75,7 @@ function App() {
         }
         <h3>Todo List</h3>
         <div className="form-control">
-          <input type="text" className="main" placeholder="e.g HomeWork" value={name} onChange={(e) => setName(e.target.value)} />
+          <input type="text" className="main" placeholder="e.g Do Home Work" value={name} onChange={(e) => setName(e.target.value)} />
           <button type="submit" className="submit-btn">
             {
               isEditing ? "edit" : 'Submit'

@@ -179,7 +179,7 @@ Todo App
   display: grid;
   align-items: center;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   border-radius: 0.25rem;
   letter-spacing: var(--spacing);
   text-transform: capitalize;
@@ -258,6 +258,9 @@ Todo App
 .main-item:hover .title {
   color: var(--clr-grey-5);
 }
+.main-item > .title{
+  max-width:20vw;
+}
 .title {
   margin-bottom: 0;
   color: var(--clr-grey-1);
@@ -269,7 +272,7 @@ Todo App
   background: transparent;
   border-color: transparent;
   cursor: pointer;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   margin: 0 0.15rem;
   transition: var(--transition);
 }
@@ -302,5 +305,15 @@ Todo App
   margin-top: 1.25rem;
 }
 .clear-btn:hover {
-  color: var(--clr-red-dark);
+  color: var(--clr-white);
+  background: var(--clr-primary-8);
+}
+@media screen and (max-width: 573px) {
+  .edit-btn,
+.delete-btn {
+  font-size: 0.9rem;
+}
+.main-item > .title{
+  max-width:40vw;
+}
 }
