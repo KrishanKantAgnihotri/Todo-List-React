@@ -316,5 +316,6 @@ Todo App
   }
   .main-item > .title {
     max-width: 30vw;
+    word-break: break-all;
   }
 }
